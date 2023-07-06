@@ -1,10 +1,10 @@
+/*
 package com.example.demo.org.salem.domain;
-
+//AmountVO: 결제 금액 정보를 나타내는 클래스입니다.
 public class AmountVO {
     private Integer total, tax_free_amount, vat_amount, point, discount;
 
-    // Add getter and setter methods for the fields
-    // For example:
+
     public Integer getTotal() {
         return total;
     }
@@ -13,7 +13,18 @@ public class AmountVO {
         this.total = total;
     }
 
-    // Repeat the same for other fields
 
 
+}*/
+package com.example.demo.org.salem.domain;
+
+import lombok.Data;
+
+@Data
+public class AmountVO {
+    private Integer total;
+    private Integer tax_free_amount;
+    private Integer vat_amount;
+    private Integer point;
+    private Integer discount;
 }
